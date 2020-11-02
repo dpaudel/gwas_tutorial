@@ -14,6 +14,8 @@ phenos=read.delim('data/ames_phenos.txt', row.names=1)
 genos=read.delim('data/ames_color_chr6.numeric.txt.gz', skip=1, row.names=1)
 identical(rownames(genos), rownames(phenos))
 phenos$color <- as.numeric(phenos$color)
+# Extract marker positions (are part of the marker names) 
+positions = as.numeric(sub(names(genos), pattern="S._", repl=""))
 ```
 ## Basic GWAS helper function
 

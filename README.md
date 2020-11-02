@@ -3,6 +3,14 @@ Tutorial on running basic GWAS
 
 [![Binder](https://mybinder.org/badge_logo.svg)]( https://mybinder.org/v2/gh/dpaudel/gwas_tutorial/main?urlpath=rstudio )
 
+# Height example
+
+```
+height <- read.table("https://raw.githubusercontent.com/dpaudel/gwas_tutorial/main/data/height.txt", header=T)
+head(height)
+summary(lm(height~m1))
+```
+
 # Simplified GWAS script for running in-class exercise
 
 Data for this example comes from Romay et al 2013, Genome Biology201314:R55 [DOI: 10.1186/gb-2013-14-6-r55](https://genomebiology.biomedcentral.com/articles/10.1186/gb-2013-14-6-r55)
@@ -10,8 +18,8 @@ Data for this example comes from Romay et al 2013, Genome Biology201314:R55 [DOI
 ## Load data and confirm samples are the same
 
 ```
-phenos=read.delim('data/ames_phenos.txt', row.names=1)
-genos=read.delim('data/ames_color_chr6.numeric.txt.gz', skip=1, row.names=1)
+phenos=read.delim('https://raw.githubusercontent.com/dpaudel/gwas_tutorial/main/data/ames_data.txt', row.names=1)
+genos=read.delim('https://raw.githubusercontent.com/dpaudel/gwas_tutorial/main/data/ames_chr6.numeric.txt.gz', skip=1, row.names=1)
 identical(rownames(genos), rownames(phenos))
 phenos$color <- as.numeric(phenos$color)
 # Extract marker positions (are part of the marker names) 

@@ -8,7 +8,7 @@ Tutorial on running basic GWAS
 ```
 height <- read.table("https://raw.githubusercontent.com/dpaudel/gwas_tutorial/main/data/height.txt", header=T)
 head(height)
-summary(lm(height~m1))
+summary(lm(height~m1, data=height))
 ```
 
 # Simplified GWAS script for running in-class exercise

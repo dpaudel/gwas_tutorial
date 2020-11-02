@@ -65,15 +65,33 @@ plot(positions, -log10(results2))
 ```
 source("http://www.zzlab.net/GAPIT/gapit_functions.txt")
 ```
-## Import phenotype
+## Import data from Zhiwu Zhang Lab
+
+Import phenotypes:
 
 ```
-myY <- read.table("http://zzlab.net/GAPIT/data/mdp_traits.txt", header = T)
-```
-## Import genotype
-
-```
-myG <- read.table("http://zzlab.net/GAPIT/data/mdp_genotype_test.hmp.txt", head = FALSE)
+myY <- read.table("http://zzlab.net/GAPIT/data/mdp_traits.txt", head = TRUE)
 ```
 
+Import genotypes:
 
+```
+myGD=read.table(file="http://zzlab.net/GAPIT/data/mdp_numeric.txt",head=T)
+```
+
+Import genetic map:
+
+```
+myGM=read.table(file="http://zzlab.net/GAPIT/data/mdp_SNP_information.txt",head=T)
+```
+
+Run GAPIT
+
+```
+myGAPIT <- GAPIT(
+Y=myY,
+GD=myGD,
+PCA.total=3,
+model="MLMM"
+)
+```

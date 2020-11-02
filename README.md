@@ -63,7 +63,8 @@ plot(positions, -log10(results2))
 ## Get source codes for GWAS analysis
 
 ```
-source("http://www.zzlab.net/GAPIT/gapit_functions.txt")
+source("http://zzlab.net/GAPIT/GAPIT.library.R")
+source("http://zzlab.net/GAPIT/gapit_functions.txt")
 ```
 ## Import data from Zhiwu Zhang Lab
 

@@ -92,6 +92,7 @@ Run GAPIT
 myGAPIT <- GAPIT(
 Y=myY,
 GD=myGD,
+GM=myGM,
 PCA.total=3,
 model="MLMM"
 )

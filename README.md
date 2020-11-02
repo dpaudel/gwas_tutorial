@@ -18,8 +18,8 @@ Data for this example comes from Romay et al 2013, Genome Biology201314:R55 [DOI
 ## Load data and confirm samples are the same
 
 ```
-phenos=read.delim('https://raw.githubusercontent.com/dpaudel/gwas_tutorial/main/data/ames_data.txt', row.names=1)
-genos=read.delim('https://raw.githubusercontent.com/dpaudel/gwas_tutorial/main/data/ames_chr6.numeric.txt.gz', skip=1, row.names=1)
+phenos <- read.delim("data/ames_data.txt", row.names = 1)
+genos <- read.delim("data/ames_chr6.numeric.txt.gz", skip=1, row.names=1)
 identical(rownames(genos), rownames(phenos))
 phenos$color <- as.numeric(phenos$color)
 # Extract marker positions (are part of the marker names) 

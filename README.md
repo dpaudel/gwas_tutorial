@@ -6,7 +6,7 @@ Tutorial on running basic GWAS
 # Height example
 
 ```
-height <- read.table("https://raw.githubusercontent.com/dpaudel/gwas_tutorial/main/data/height.txt", header=T)
+height <- read.table("data/height.txt", header = T)
 head(height)
 summary(lm(height~m1, data=height))
 ```

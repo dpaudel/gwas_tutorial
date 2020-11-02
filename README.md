@@ -16,8 +16,11 @@ identical(rownames(genos), rownames(phenos))
 phenos$color <- as.numeric(phenos$color)
 ```
 ## Basic GWAS helper function
+
 data = data frame containing phenotype and any covariates
+
 genos = genotype matrix with samples in rows and sites in columns. (Rows should match those in data)
+
 base_model = String specifying the linear regression model that SNPs will be added to. 
 
 ```

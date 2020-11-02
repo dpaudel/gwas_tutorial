@@ -94,6 +94,6 @@ Y=myY,
 GD=myGD,
 GM=myGM,
 PCA.total=3,
-model="MLMM"
+model="MLM"   # can use any of "GLM" "CMLM" "FarmCPU" "Blink"
 )
 ```

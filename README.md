@@ -3,8 +3,9 @@ Tutorial on running basic GWAS
 
 [![Binder](https://mybinder.org/badge_logo.svg)]( https://mybinder.org/v2/gh/dpaudel/gwas_tutorial/main?urlpath=rstudio )
 
-# A simplified GWAS script for running our in-class exercise
-# Data for this example comes from Romay et al 2013, Genome Biology201314:R55 DOI: 10.1186/gb-2013-14-6-r55
+# Simplified GWAS script for running in-class exercise
+
+Data for this example comes from Romay et al 2013, Genome Biology201314:R55 (DOI: 10.1186/gb-2013-14-6-r55)![https://genomebiology.biomedcentral.com/articles/10.1186/gb-2013-14-6-r55]
 
 ## Load data and confirm samples are the same
 

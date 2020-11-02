@@ -5,7 +5,7 @@ Tutorial on running basic GWAS
 
 # Simplified GWAS script for running in-class exercise
 
-Data for this example comes from Romay et al 2013, Genome Biology201314:R55 (DOI: 10.1186/gb-2013-14-6-r55)![https://genomebiology.biomedcentral.com/articles/10.1186/gb-2013-14-6-r55]
+Data for this example comes from Romay et al 2013, Genome Biology201314:R55 (DOI: 10.1186/gb-2013-14-6-r55)[https://genomebiology.biomedcentral.com/articles/10.1186/gb-2013-14-6-r55]
 
 ## Load data and confirm samples are the same
 

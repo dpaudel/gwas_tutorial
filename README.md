@@ -107,3 +107,8 @@ PCA.total=3,
 model="MLM"   # can use any of "GLM" "CMLM" "FarmCPU" "Blink"
 )
 ```
+
+## Old GWAS source 
+```
+http://dl.dropbox.com/s/990vn30zzxfgxgk/dev_farmCPU_functions.R
+```
